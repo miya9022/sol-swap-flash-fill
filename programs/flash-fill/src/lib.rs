@@ -59,7 +59,7 @@ pub mod flash_fill {
             index += 1
         }
 
-        let authority_bump = ctx.bumps.get("program_authority").unwrap().to_le_bytes();
+        let authority_bump = ctx.bumps.program_authority.to_le_bytes();
         let rent = Rent::get()?;
         let space = TokenAccount::LEN;
         let token_lamports = rent.minimum_balance(space);
