@@ -1,6 +1,6 @@
 [package]
 name = "flash-fill"
-version = "0.1.1"
+version = "0.1.0"
 description = "Created with Anchor"
 edition = "2021"
 
@@ -16,7 +16,7 @@ cpi = ["no-entrypoint"]
 default = []
 
 [dependencies]
-anchor-lang = "0.30.1"
-anchor-spl = "0.30.1"
+anchor-lang = "0.29"
+anchor-spl = "0.29"
 spl-token = { version = "4.0.0", features = ["no-entrypoint"] }
 winnow = "=0.4.1"
